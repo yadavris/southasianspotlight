@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(24, 9.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(20, 90%, 65%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(24, 9.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(24, 9.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* South Asian Cultural Colors */
+  --saffron-50: hsl(25, 100%, 97%);
+  --saffron-100: hsl(25, 100%, 93%);
+  --saffron-200: hsl(25, 100%, 83%);
+  --saffron-300: hsl(25, 100%, 70%);
+  --saffron-400: hsl(25, 100%, 60%);
+  --saffron-500: hsl(18, 100%, 60%);
+  --saffron-600: hsl(18, 89%, 52%);
+  --saffron-700: hsl(18, 82%, 42%);
+  --saffron-800: hsl(18, 75%, 33%);
+  --saffron-900: hsl(18, 68%, 25%);
+  
+  --warm-gray-50: hsl(0, 0%, 98%);
+  --warm-gray-100: hsl(0, 0%, 96%);
+  --warm-gray-200: hsl(0, 0%, 91%);
+  --warm-gray-300: hsl(0, 0%, 83%);
+  --warm-gray-400: hsl(0, 0%, 64%);
+  --warm-gray-500: hsl(0, 0%, 45%);
+  --warm-gray-600: hsl(0, 0%, 32%);
+  --warm-gray-700: hsl(0, 0%, 25%);
+  --warm-gray-800: hsl(0, 0%, 15%);
+  --warm-gray-900: hsl(0, 0%, 9%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(20, 90%, 65%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .cultural-gradient {
+    background: linear-gradient(135deg, hsl(25, 100%, 70%) 0%, hsl(25, 100%, 60%) 50%, hsl(18, 100%, 60%) 100%);
+  }
+  
+  .mandala-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFB366' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(24, 9.8%, 95.9%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(25, 100%, 70%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(25, 100%, 60%);
+}
