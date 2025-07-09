@@ -68,8 +68,10 @@ export default function AnnouncementsSection() {
                   <h3 className="font-semibold text-lg text-gray-800 mb-2">{announcement.title}</h3>
                   <p className="text-gray-600 text-sm mb-4">{announcement.description}</p>
                   {announcement.link && (
-                    <Button variant="ghost" className="p-0 h-auto text-orange-600 hover:text-orange-700">
-                      Read More <ArrowRight className="w-4 h-4 ml-1" />
+                    <Button variant="ghost" className="p-0 h-auto text-orange-600 hover:text-orange-700" asChild>
+                      <a href={announcement.link} target="_blank" rel="noopener noreferrer">
+                        Read More <ArrowRight className="w-4 h-4 ml-1" />
+                      </a>
                     </Button>
                   )}
                 </CardContent>

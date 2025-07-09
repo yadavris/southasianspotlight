@@ -97,27 +97,27 @@ export class MemStorage implements IStorage {
         position: "President",
         bio: "Computer Science major passionate about bridging cultures and creating inclusive spaces for South Asian students.",
         imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b66639c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#",
-        email: "priya.sharma@university.edu",
-        major: "Computer Science"
+        linkedinUrl: "#" as string | null,
+        email: "priya.sharma@university.edu" as string | null,
+        major: "Computer Science" as string | null
       },
       {
         name: "Arjun Patel",
         position: "Vice President",
         bio: "Business Administration student with a focus on event planning and community outreach programs.",
         imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#",
-        email: "arjun.patel@university.edu",
-        major: "Business Administration"
+        linkedinUrl: "#" as string | null,
+        email: "arjun.patel@university.edu" as string | null,
+        major: "Business Administration" as string | null
       },
       {
         name: "Kavya Reddy",
         position: "Secretary",
         bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
         imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#",
-        email: "kavya.reddy@university.edu",
-        major: "Psychology"
+        linkedinUrl: "#" as string | null,
+        email: "kavya.reddy@university.edu" as string | null,
+        major: "Psychology" as string | null
       }
     ];
 
@@ -136,7 +136,7 @@ export class MemStorage implements IStorage {
         location: "Student Union Building",
         category: "Cultural Event",
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
-        registrationOpen: true
+        registrationOpen: true as boolean
       },
       {
         title: "Bollywood Dance Workshop",
@@ -146,7 +146,7 @@ export class MemStorage implements IStorage {
         location: "Dance Studio A",
         category: "Workshop",
         imageUrl: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
-        registrationOpen: true
+        registrationOpen: true as boolean
       },
       {
         title: "Traditional Cooking Class",
@@ -156,7 +156,7 @@ export class MemStorage implements IStorage {
         location: "Culinary Arts Center",
         category: "Cultural Food",
         imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
-        registrationOpen: true
+        registrationOpen: true as boolean
       }
     ];
 
@@ -174,7 +174,7 @@ export class MemStorage implements IStorage {
         categoryColor: "bg-orange-500",
         icon: "fas fa-bullhorn",
         date: "2 days ago",
-        link: "#"
+        link: "#" as string | null
       },
       {
         title: "Temple Volunteer Opportunity",
@@ -183,7 +183,7 @@ export class MemStorage implements IStorage {
         categoryColor: "bg-green-500",
         icon: "fas fa-hands-helping",
         date: "5 days ago",
-        link: "#"
+        link: "https://www.hindutempleatlanta.org/volunteer" as string | null
       },
       {
         title: "Share Your Ideas",
@@ -192,7 +192,7 @@ export class MemStorage implements IStorage {
         categoryColor: "bg-purple-500",
         icon: "fas fa-lightbulb",
         date: "1 week ago",
-        link: "#"
+        link: "#" as string | null
       }
     ];
 
@@ -232,31 +232,31 @@ export class MemStorage implements IStorage {
     const seedGalleryImages = [
       {
         title: "Diwali Celebration",
-        description: "Beautiful moments from our Diwali celebration with diyas and rangoli",
+        description: "Beautiful moments from our Diwali celebration with diyas and rangoli" as string | null,
         imageUrl: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
         category: "Cultural Event",
-        eventDate: "2023-11-12"
+        eventDate: "2023-11-12" as string | null
       },
       {
         title: "Club Meeting",
-        description: "Students engaged in cultural club activities and discussions",
+        description: "Students engaged in cultural club activities and discussions" as string | null,
         imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
         category: "Club Meeting",
-        eventDate: "2023-10-15"
+        eventDate: "2023-10-15" as string | null
       },
       {
         title: "Traditional Dance Performance",
-        description: "Beautiful traditional dance performance with colorful costumes",
+        description: "Beautiful traditional dance performance with colorful costumes" as string | null,
         imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
         category: "Cultural Performance",
-        eventDate: "2023-09-20"
+        eventDate: "2023-09-20" as string | null
       },
       {
         title: "Temple Visit",
-        description: "Community service at local Hindu temple",
+        description: "Community service at local Hindu temple" as string | null,
         imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
         category: "Community Service",
-        eventDate: "2023-08-25"
+        eventDate: "2023-08-25" as string | null
       }
     ];
 

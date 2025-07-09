@@ -97,7 +97,7 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition-colors">
+                <a href="https://www.hindutempleatlanta.org/volunteer" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Temple Volunteer
                 </a>
               </li>
