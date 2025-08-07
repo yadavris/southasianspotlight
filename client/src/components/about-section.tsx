@@ -8,14 +8,14 @@ export default function AboutSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              The South Asian Cultural Club serves as a bridge between tradition and modernity, 
+              The College Park South Asian Club aims to enrich the College Park community by celebrating the vibrancy, 
+              diversity, and richness of South Asian culture, 
               creating a vibrant community where students can explore their heritage while building 
-              lasting connections. We celebrate the rich diversity of South Asian cultures through 
-              educational events, cultural performances, and community service.
+              lasting connections. We  foster cultural awareness, appreciation, and unity through engaging events, traditional cuisine, and community outreach.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Our goal is to foster cross-cultural understanding, promote academic excellence, 
-              and create meaningful opportunities for personal and professional growth within our community.
+              
+              Whether it's dancing at Diwali, tossing colors during Holi, or just sharing a cup of chai - SAC is a place for everyone to connect, learn, and have fun!
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
@@ -40,7 +40,7 @@ export default function AboutSection() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+              src="https://i.ibb.co/GYh5X82/Screenshot-2025-07-26-184209.png&auto=format&fit=crop&w=600&h=400" 
               alt="South Asian students in cultural attire"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />

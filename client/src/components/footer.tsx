@@ -24,18 +24,14 @@ export default function Footer() {
               Celebrating South Asian heritage and building lasting connections in our university community.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-400">
-                <Facebook className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-400">
+              
+              
+              <a href="https://www.instagram.com/cpsouthasian/">
+  <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-400">
                 <Instagram className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-400">
-                <Twitter className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-300 hover:text-orange-400">
-                <Linkedin className="w-5 h-5" />
-              </Button>
+</a>
+              
             </div>
           </div>
           
@@ -94,35 +90,23 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold text-lg mb-4">Resources</h4>
+            <h4 className="font-semibold text-lg mb-4">External Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.hindutempleatlanta.org/volunteer" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Temple Volunteer
+                <a href="https://woodlandshindutemple.charityproud.org/VolunteerRegistration/Calendar/2316" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  Hindu Temple Volunteer Sign-Up
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Suggestion Box
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Newsletter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-orange-400 transition-colors">
-                  Member Portal
-                </a>
-              </li>
+              
+            
+          
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            &copy; 2024 South Asian Cultural Club. All rights reserved.
+            &copy; 2025 CP South Asian Club. All rights reserved. <br /> Developed by Rishabh Yadav
           </p>
         </div>
       </div>

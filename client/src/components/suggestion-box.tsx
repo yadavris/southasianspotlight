@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { Lightbulb } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
 
 export default function SuggestionBox() {
   const [formData, setFormData] = useState({
@@ -22,23 +24,21 @@ export default function SuggestionBox() {
 
   const suggestionMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
-      return await apiRequest("POST", "/api/suggestions", data);
+  const result = await emailjs.send(
+    "cpsouthasianclub",
+    "template_ndwtcoa",
+    {
+      name: data.name,
+      email: data.email,
+      suggestion: data.suggestion,
+      category: data.category,
     },
-    onSuccess: () => {
-      toast({
-        title: "Suggestion submitted!",
-        description: "Thank you for your suggestion. We'll review it carefully.",
-      });
-      setFormData({ name: "", email: "", suggestion: "", category: "" });
-      queryClient.invalidateQueries({ queryKey: ["/api/suggestions"] });
-    },
-    onError: () => {
-      toast({
-        title: "Error",
-        description: "Failed to submit suggestion. Please try again.",
-        variant: "destructive",
-      });
-    },
+    "NfNLoK4Co8W7W7g_9"
+  );
+
+  return result;
+},
+
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -55,7 +55,7 @@ export default function SuggestionBox() {
           </div>
           <h3 className="text-2xl font-bold text-gray-800 mb-2">Suggestion Box</h3>
           <p className="text-gray-600">
-            Have ideas for events, activities, or improvements? We'd love to hear your suggestions!
+            Have ideas for events, meeting activities, or improvements? We'd love to hear your suggestions!
           </p>
         </div>
         
@@ -89,10 +89,9 @@ export default function SuggestionBox() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="events">Events</SelectItem>
-                <SelectItem value="activities">Activities</SelectItem>
-                <SelectItem value="workshops">Workshops</SelectItem>
                 <SelectItem value="community-service">Community Service</SelectItem>
-                <SelectItem value="meetings">Meetings</SelectItem>
+                <SelectItem value="meetings">Meeting Activities</SelectItem>
+                <SelectItem value="= food">Food</SelectItem>
                 <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>

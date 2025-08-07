@@ -92,32 +92,64 @@ export class MemStorage implements IStorage {
   private seedData() {
     // Seed officers
     const seedOfficers = [
+      
       {
-        name: "Priya Sharma",
-        position: "President",
+        name: "Aditi Venkataraman",
+        position: "Co-President",
         bio: "Computer Science major passionate about bridging cultures and creating inclusive spaces for South Asian students.",
-        imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b66639c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#" as string | null,
-        email: "priya.sharma@university.edu" as string | null,
-        major: "Computer Science" as string | null
+        imageUrl: "https://i.ibb.co/6cmwqYSr/1.png&auto=format&fit=crop&w=200&h=200",
+        
       },
       {
-        name: "Arjun Patel",
-        position: "Vice President",
+        name: "Lekisha Nagpal",
+        position: "Co-President",
         bio: "Business Administration student with a focus on event planning and community outreach programs.",
-        imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#" as string | null,
-        email: "arjun.patel@university.edu" as string | null,
-        major: "Business Administration" as string | null
+        imageUrl: "https://i.ibb.co/CXZk3dF/2.png&auto=format&fit=crop&w=200&h=200",
+       
       },
       {
-        name: "Kavya Reddy",
+        name: "Vibhan Emmi",
+        position: "Vice President",
+        bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
+        imageUrl: "https://i.ibb.co/ycbW71tF/3.png&auto=format&fit=crop&w=200&h=200",
+        
+      },
+      {
+        name: "Varun Venkataraman",
+        position: "Director",
+        bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
+        imageUrl: "https://i.ibb.co/jvMXqMZ3/4.png&auto=format&fit=crop&w=200&h=200",
+       
+      },
+      {
+        name: "Rishabh Yadav",
         position: "Secretary",
         bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
-        imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200",
-        linkedinUrl: "#" as string | null,
-        email: "kavya.reddy@university.edu" as string | null,
-        major: "Psychology" as string | null
+        imageUrl: "https://i.ibb.co/LhzBFhb9/Untitled-design.jpg&auto=format&fit=crop&w=200&h=200",
+        
+      },
+      {
+        name: "Zara Arsiwala",
+        position: "Outreach Manager",
+        bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
+        imageUrl: "https://i.ibb.co/6R91ZXdB/5.png&auto=format&fit=crop&w=200&h=200",
+        
+      }
+      ,
+      {
+        name: "Karishma Parghi",
+        position: "Treasurer",
+        bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
+        imageUrl: "https://i.ibb.co/B5bG717h/6.png&auto=format&fit=crop&w=200&h=200",
+        
+      }
+      ,
+      {
+        name: "Rukshara Premkumar",
+        position: "Historian",
+        bio: "Psychology major dedicated to fostering mental health awareness and cultural identity within our community.",
+        imageUrl: "https://i.ibb.co/Z6HwZyQX/7.png&auto=format&fit=crop&w=200&h=200",
+        
       }
     ];
 
@@ -129,35 +161,26 @@ export class MemStorage implements IStorage {
     // Seed events
     const seedEvents = [
       {
-        title: "Holi Festival Celebration",
-        description: "Join us for the festival of colors! Traditional music, dance, and authentic Indian cuisine.",
-        date: "2024-03-15",
-        time: "6:00 PM - 9:00 PM",
-        location: "Student Union Building",
-        category: "Cultural Event",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
+        title: "Camp Cavalier Showcase",
+        description: "Come learn about our club and our mission! We'll have a booth with fun games, food, and information about our events! ",
+        date: "2025-08-02",
+        time: "5:00 - 8:00 PM",
+        location: "College Park High School",
+        category: "Club showcase",
+        imageUrl: "https://i.ibb.co/3ykQp7fC/Untitled-design-3.png&auto=format&fit=crop&w=400&h=200",
         registrationOpen: true as boolean
       },
       {
-        title: "Bollywood Dance Workshop",
-        description: "Learn traditional Bollywood dance moves from professional instructors. All skill levels welcome!",
-        date: "2024-03-22",
-        time: "7:00 PM - 9:00 PM",
-        location: "Dance Studio A",
+        title: "Mental Health Workshop",
+        description: "Hear from and engage with various licensed professionals in the wellness and mental health field, enjoy interactive activities and sessions exploring mental health from a cultural perspective - $5",
+        date: "2025-08-24",
+        time: "4:00 PM - 6:00 PM",
+        location: "Hindu Temple Woodlands",
         category: "Workshop",
-        imageUrl: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
+        imageUrl: "https://i.ibb.co/cKS5LZsH/Camp-Cav-Design.png&auto=format&fit=crop&w=400&h=200",
         registrationOpen: true as boolean
       },
-      {
-        title: "Traditional Cooking Class",
-        description: "Learn to cook authentic South Asian dishes with traditional spices and techniques.",
-        date: "2024-03-29",
-        time: "5:00 PM - 8:00 PM",
-        location: "Culinary Arts Center",
-        category: "Cultural Food",
-        imageUrl: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
-        registrationOpen: true as boolean
-      }
+      
     ];
 
     seedEvents.forEach(event => {
@@ -231,32 +254,32 @@ export class MemStorage implements IStorage {
     // Seed gallery images
     const seedGalleryImages = [
       {
-        title: "Diwali Celebration",
-        description: "Beautiful moments from our Diwali celebration with diyas and rangoli" as string | null,
-        imageUrl: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
-        category: "Cultural Event",
-        eventDate: "2023-11-12" as string | null
-      },
-      {
-        title: "Club Meeting",
-        description: "Students engaged in cultural club activities and discussions" as string | null,
-        imageUrl: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+        title: "SEA Club Colab Meeting",
+        description: "Pictures from our meeting in collaboration with Southeast Asian Club!" as string | null,
+        imageUrl: "https://i.ibb.co/bMvp2v4j/saseaclub.png&auto=format&fit=crop&w=400&h=400",
         category: "Club Meeting",
-        eventDate: "2023-10-15" as string | null
+        
       },
       {
-        title: "Traditional Dance Performance",
-        description: "Beautiful traditional dance performance with colorful costumes" as string | null,
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
-        category: "Cultural Performance",
-        eventDate: "2023-09-20" as string | null
+        title: "Valentine's Day Celebration Meeting",
+        description: "Valentine's Day here at South Asian Club!" as string | null,
+        imageUrl: "https://i.ibb.co/nqHPFM2R/valentines.png&auto=format&fit=crop&w=400&h=400",
+        category: "Club Meeting",
+        
       },
       {
-        title: "Temple Visit",
-        description: "Community service at local Hindu temple" as string | null,
-        imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
-        category: "Community Service",
-        eventDate: "2023-08-25" as string | null
+        title: "Yoga Fun and Tasty Chaat",
+        description: "First meeting of 2025! We had a great time learning new yoga tricks and eating yummy chaat!" as string | null,
+        imageUrl: "https://i.ibb.co/35D1GjZW/Screenshot-2025-07-26-182920.png&auto=format&fit=crop&w=400&h=400",
+        category: "Club Meeting",
+        
+      },
+      {
+        title: "Holiday Meeting",
+        description: "Students celebrated the holiday season through cards, food, and fun!" as string | null,
+        imageUrl: "https://i.ibb.co/20m0vLVD/Screenshot-2025-07-26-183526.png&auto=format&fit=crop&w=400&h=400",
+        category: "Club Meeting",
+        eventDate: "2024-12-06" as string | null
       }
     ];
 

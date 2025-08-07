@@ -72,7 +72,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Meeting Location</p>
-                    <p className="text-gray-600">Student Union Building, Room 201</p>
+                    <p className="text-gray-600">2600 LGI - Subject to Change</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -81,25 +81,22 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Meeting Times</p>
-                    <p className="text-gray-600">Fridays at 6:00 PM</p>
+                    <p className="text-gray-600">Last Friday of Each Month!</p>
                   </div>
                 </div>
               </div>
               <div className="mt-8">
                 <h4 className="font-semibold text-lg text-gray-800 mb-4">Follow Us</h4>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="icon" className="hover:bg-blue-50">
-                    <Facebook className="w-5 h-5 text-blue-600" />
-                  </Button>
+                  
                   <Button variant="outline" size="icon" className="hover:bg-pink-50">
                     <Instagram className="w-5 h-5 text-pink-600" />
+                    
                   </Button>
-                  <Button variant="outline" size="icon" className="hover:bg-blue-50">
-                    <Twitter className="w-5 h-5 text-blue-400" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="hover:bg-blue-50">
-                    <Linkedin className="w-5 h-5 text-blue-700" />
-                  </Button>
+                  <br></br>
+                  <em><h6>@cpsouthasian</h6></em>
+                  
+                  
                 </div>
               </div>
             </CardContent>

@@ -28,7 +28,7 @@ export default function GallerySection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Photo Gallery</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Moments from our cultural celebrations, workshops, and community events</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">Moments from our meetings, cultural celebrations, and community events</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
@@ -45,7 +45,7 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Photo Gallery</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Moments from our cultural celebrations, workshops, and community events</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">Moments from our meetings, cultural celebrations, and community events</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryImages?.map((image) => (

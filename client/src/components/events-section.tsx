@@ -56,7 +56,7 @@ export default function EventsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Upcoming Events</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Join us for cultural celebrations, educational workshops, and community gatherings</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">Join us for club meetings, community events, and educational workshops.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {events?.map((event) => (
@@ -82,12 +82,7 @@ export default function EventsSection() {
                   <Clock className="w-4 h-4 ml-4 mr-2" />
                   <span>{event.time}</span>
                 </div>
-                <Button 
-                  className={`w-full text-white font-semibold transition-colors duration-300 ${buttonColors[event.category as keyof typeof buttonColors] || 'bg-gray-500 hover:bg-gray-600'}`}
-                  disabled={!event.registrationOpen}
-                >
-                  {event.registrationOpen ? 'Register Now' : 'Registration Closed'}
-                </Button>
+               
               </CardContent>
             </Card>
           ))}

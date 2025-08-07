@@ -27,7 +27,7 @@ export default function Home() {
       <OfficersSection />
       <MemberSpotlightSection />
       <AboutSection />
-      <NewsletterSection />
+
       <ContactSection />
       <Footer />
     </div>
