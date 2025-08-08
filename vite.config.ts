@@ -9,8 +9,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  // The 'base' URL must be static for GitHub Pages to resolve correctly
-  base: "/southasianspotlight/", 
+  // The base path is set to a relative path to ensure all assets
+  // are loaded correctly on GitHub Pages, regardless of the subdirectory.
+  base: "./", 
   root: path.resolve(__dirname, "client"),
   plugins: [
     react(),
