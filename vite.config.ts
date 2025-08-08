@@ -8,12 +8,9 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Get a unique timestamp to force cache-busting
-const timestamp = Date.now();
-
 export default defineConfig({
-  // The 'base' URL now includes a dynamic timestamp to prevent caching issues
-  base: `/southasianspotlight/${timestamp}/`, 
+  // The 'base' URL must be static for GitHub Pages to resolve correctly
+  base: "/southasianspotlight/", 
   root: path.resolve(__dirname, "client"),
   plugins: [
     react(),
