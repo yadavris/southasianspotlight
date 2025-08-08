@@ -8,7 +8,8 @@ import NotFound from "@/pages/not-found";
 
 function AppRouter() {
   return (
-    <Router basepath="/southasianspotlight">
+    // ✅ Correct prop name is "base", not "basepath"
+    <Router base="/southasianspotlight">
       <Switch>
         <Route path="/" component={Home} />
         {/* Fallback to 404 */}
