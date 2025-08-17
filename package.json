@@ -4,9 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development tsx server/index.ts",
+    "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
     "build": "vite build",
-    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "serve": "node dist/server/index.js",
     "check": "tsc",
     "db:push": "drizzle-kit push",
     "deploy": "vite build && node -e \"const fs=require('fs');fs.copyFileSync('dist/public/index.html','dist/public/404.html')\" && npx gh-pages -d dist/public"
@@ -55,6 +55,7 @@
     "embla-carousel-react": "^8.6.0",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
+    "firebase": "^12.1.0",
     "framer-motion": "^11.13.1",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.453.0",
@@ -80,6 +81,7 @@
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
+    "@jridgewell/resolve-uri": "^3.1.2",
     "@replit/vite-plugin-cartographer": "^0.2.7",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
     "@tailwindcss/typography": "^0.5.15",
@@ -94,12 +96,13 @@
     "@types/react-dom": "^18.3.1",
     "@types/ws": "^8.5.13",
     "@vitejs/plugin-react": "^4.3.2",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "drizzle-kit": "^0.30.4",
     "esbuild": "^0.25.0",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.1",
     "typescript": "5.6.3",

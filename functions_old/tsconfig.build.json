@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*", "../shared/**/*", "../server/**/*"],
+  "exclude": ["node_modules", "build", "dist", "node_modules/drizzle-orm"],
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./dist",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "strict": false,
+    "module": "NodeNext",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
